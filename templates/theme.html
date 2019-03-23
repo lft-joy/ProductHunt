@@ -8,13 +8,12 @@
     <style>
         .dfd {
             position: fixed;
-            right: 200px;
+            right: 260px;
         }
     </style>
 </head>
 <body>
-{% block content %}
-{% endblock content %}
+
 {#{% extends 'theme.html' %}#}
 {#{% block content %}#}
 {#    这是产品列表的主要内容#}
@@ -51,6 +50,7 @@
             </div>
             <ul class="nav navbar-nav navbar-right  ">
                 <li><a href="#">登录</a></li>
+                <li><a href="{% url '注册页面' %}">注册</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                        aria-expanded="false">个人管理 <span class="caret"></span></a>
@@ -66,7 +66,8 @@
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
-
+{% block content %}
+{% endblock content %}
 <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
 <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
 <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
