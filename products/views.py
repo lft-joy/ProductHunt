@@ -6,3 +6,7 @@ from django.shortcuts import render
 
 def products_list(requests):
     return render(requests, 'products_list.html')
+
+
+def product(request):
+    return render(request, 'product.html')
